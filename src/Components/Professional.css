@@ -1,0 +1,120 @@
+.professional{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+    color: #fff;
+    background-color: #151b22e3;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease-in-out;
+    padding-bottom: 10%;
+    padding-top: 20%;
+}
+
+.professional::after{
+    content: '';
+    position: absolute;
+    background: url('../assets/bg.jpg');
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.professional:hover::after{
+    animation: banim 10s;
+}
+
+.trainers{
+    display: flex;
+}
+
+.trainer-img{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 10px var(--darkblue) solid;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.trainer-img:hover{
+    border-color: var(--red);
+}
+
+.trainer-img-itself{
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.trainer-img-itself:hover{
+    transform: scale(1.1);
+}
+
+.trainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.trainer-name{
+    margin: 10px 0px;
+}
+
+.trainer-position{
+    margin: 10px 0px;
+    color: rgb(145, 145, 145);
+}
+
+.trainer-socials{
+    display: flex;
+}
+
+.tranier-social-icon{
+    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--red);
+    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.tranier-social-icon:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.whitebg-important{
+    background-color: #ddd !important;
+}
+
+@media screen and (max-width:930px) {
+    .trainers{
+        flex-direction: column;
+    }
+    .main-professional{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .trainer{
+        padding: 10px 0px;
+    }
+    .trainer-img-itself{
+        transform: scale(.8);
+    }
+    .trainer-img{
+        transform: scale(.8);
+    }
+    .main-professional{
+        font-size: 20px;
+    }
+    .stats-wrapper{
+        height: unset;
+    }
+}

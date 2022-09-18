@@ -1,13 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --red: #FD3D0C;
+  --darkblue: #151B22;
+}
+
+.container{
+  padding: 0px 90px;
+}
+
+@keyframes banim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.6);
+  }
+}
+
+@keyframes circlefade {
+  0%{
+    border-color:var(--red) ;
+  }
+  25%{
+    border-color:var(--darkblue) ;
+  }
+  50%{
+    border-color:var(--red) ;
+  }
+  75%{
+    border-color:var(--darkblue) ;
+  }
+  100%{
+    border-color:var(--red) ;
+  }
+}
+
+@keyframes circlefade2 {
+  0%{
+    border-color:var(--red) ;
+  }
+  25%{
+    border-color:#fff ;
+  }
+  50%{
+    border-color:var(--red) ;
+  }
+  75%{
+    border-color:#fff ;
+  }
+  100%{
+    border-color:var(--red) ;
+  }
+}
+
+@keyframes btnhover {
+  from{
+    height: 0%;
+  }
+  to{
+    height: 100%;
+  }
+}
+
+@keyframes btnhovertrick {
+  from{
+    background: inherit;
+  }
+  to{
+    background: var(--darkblue);
+  }
+}
+
+@keyframes shake {
+  0%{
+    transform: scale(.9);
+  }
+  25%{
+    transform: scale(1.3);
+    transform: rotate(20deg);
+  }
+  50%{
+    transform: scale(.9);
+    transform: rotate(-20deg);
+  }
+  75%{
+    transform: scale(1.3);
+    transform: rotate(20deg);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%{
+    transform: scale(.9);
+    transform: translateX(2);
+  }
+  25%{
+    transform: scale(1.3);
+    transform: translateX(-2);
+    transform: rotate(5deg);
+  }
+  50%{
+    transform: scale(.9);
+    transform: rotate(-5deg);
+    transform: translateX(1);
+  }
+  75%{
+    transform: scale(1.3);
+    transform: rotate(5deg);
+    transform: translateY(2);
+  }
+  100%{
+    transform: scale(1);
+    transform: translateY(1);
+  }
+}
+
+@keyframes fade-right-in {
+  from{
+    opacity: 0;
+    position: relative;
+    right: -500px;
+  }
+  to{
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
+
+@keyframes playvid {
+  from{
+    border: 20px #f78c72 solid;
+  }
+  from{
+    border: 70px #f78d7252 solid;
+  }
+}
+
+@keyframes small-pic-grow {
+  from{
+    transform: scale(inherit);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width:600px)  {
+  .container{
+    padding: 0px 10px;
+  }
+}
+

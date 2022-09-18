@@ -1,0 +1,81 @@
+.pricing{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.pricing-head-txt{
+    align-self: center;
+}
+
+.main-pricing{
+    align-self: center;
+}
+
+.price-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding-top: 30px;
+}
+
+.standard{
+    display: flex;
+    flex-direction: column;
+}
+
+.price-top{
+    background-color: var(--red);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 50px #c7c7c7;
+}
+
+.second-black{
+    background-color: var(--darkblue);
+}
+
+.last-white{
+    background-color: #fff;
+    color: var(--darkblue);
+}
+
+.price-features-list{
+    margin: 40px 0px;
+}
+
+.price-features-list > li{
+    margin: 10px 0px;
+
+}
+
+.price-features-list > li::marker{
+    color: green;
+    padding: 20px;
+}
+
+.per-month{
+    font-size: 18px;
+}
+
+.outline{
+    border: 2px var(--red) solid !important;
+    margin: 0px 20px;
+}
+
+@media screen and (max-width:930px) {
+    .price-table{
+        grid-template-columns: 1fr 1fr;
+    }
+    .outline{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .price-table{
+        grid-template-columns: 1fr;
+    }
+}

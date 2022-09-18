@@ -1,0 +1,178 @@
+.homesection1{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    grid-gap: 20px;
+}
+
+.abttxthead{
+    color: var(--red);
+    font-weight: 600;
+    background-color: #ffaf9bb4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.abtmaintxt{
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px #525252;
+}
+
+.homesecparag{
+    font-size: 14px;
+    color: #525252;
+    padding-bottom: 20px;
+}
+
+.namelearnmore{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.namelearnmore > div > h1{
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.namelearnmore > div{
+    margin: 0px 20px;
+}
+
+.smallimg{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.explore{
+    background-color: var(--red);
+    color: #fff;
+    padding: 20px 50px;
+}
+
+.imgside{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hsection1txt{
+    animation: fade-right-in 3s;
+}
+
+.fitnessside{
+    background-color: var(--red);
+    font-size: 90px;
+    font-weight: 600;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    letter-spacing: 13px;
+    margin-top: 40%;
+    border-radius: 15px;
+    color:#e2e2e2;
+    z-index: 0;
+}
+
+.stronggirl{
+    transform: scale(.8);
+    z-index: 1;
+    position: absolute;
+    left: -10%;
+    bottom: -13%;
+}
+
+.circles{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.circles::before{
+    background-color: transparent;
+    border: 15px var(--red) solid;
+    border-radius: 50%;
+    position: absolute;
+    height: 520px;
+    width: 520px;
+    content: '';
+    top: 10%;
+    left: 20% !important;
+    z-index: 0;
+    animation: circlefade2 20s infinite;
+    animation-delay: 6s;
+}
+
+.circles::after{
+    background-color: transparent;
+    border: 20px var(--red) solid;
+    border-radius: 50%;
+    position: absolute;
+    height: 310px;
+    width: 310px;
+    content: '';
+    top: 55%;
+    left: 50%;
+    z-index: 0;
+    animation: circlefade2 20s infinite;
+}
+
+@media  screen and (max-width:930px) {
+    .homesection1{
+        grid-template-columns: 1fr;
+    }
+    .imgside{
+        padding-right: 50px;
+    }
+    .stronggirl{
+        transform: scale(.5);
+    }
+    .circles::after{
+        height: 270px;
+        width: 270px;
+    }
+    .circles::before{
+        height: 360px;
+        width: 360px;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .imgside{
+        padding-right: 0px;
+    }
+    .fitnessside{
+        font-size: 50px;
+    }
+    .circles::after{
+        height: 170px;
+        width: 170px;
+    }
+    .circles::before{
+        height: 260px;
+        width: 260px;
+    }
+    .stronggirl{
+        transform: scale(.4);
+        margin-left: 0px;
+        left: -60%;
+        z-index: 0;
+    }
+    .abtmaintxt{
+        font-size: 20px !important;
+    }
+    .homesecparag{
+        font-size: 12px !important;
+    }
+}

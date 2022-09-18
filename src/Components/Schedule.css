@@ -1,0 +1,68 @@
+.schedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.ourschedule{
+    align-self: center;
+}
+
+.maintxtschedule{
+    font-size: 60px;
+    text-shadow: 1px 1px 2px #525252;
+}
+
+.tableheader > td{
+    background-color: var(--darkblue);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.row > td{
+    background-color: #fff ;
+    color: rgb(73, 73, 73);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px rgb(236, 236, 236) solid;
+}
+
+.row > td:hover{
+    border: 1px var(--red) solid;
+    /* box-shadow: 1px 1px #525252; */
+}
+
+.colored{
+    background-color: var(--red) !important;
+    color: #fff !important;
+}
+
+@media  screen and (max-width:930px) {
+    .maintxtschedule{
+        font-size: 40px;
+    }
+
+    .table{
+        transform: scale(.8);
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .maintxtschedule{
+        font-size: 30px;
+    }
+
+    .table{
+        /* transform: scale(.3); */
+        display: none;
+    }
+}
