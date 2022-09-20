@@ -1,7 +1,8 @@
 .cardsection{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
+    align-items: center;
     grid-gap: 10px;
     color: #fff;
     background-color: #151b22e3;
@@ -29,7 +30,7 @@
 }
 
 .contactus{
-    align-self: flex-start;
+    align-self: center;
     margin: 15% 0px 2%;
 }
 
@@ -42,9 +43,12 @@
 }
 
 .cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
     grid-gap: 20px;
+    transition: all 0.5s ease-in-out;
+    justify-self: normal;
+    /* overflow: hidden; */
 }
 
 .card{
@@ -81,6 +85,26 @@
 
 .card p{
     padding: 0px 30px;
+}
+
+.arr-icon{
+    width: 30px;
+    height: 30px;
+    margin: 2px 20px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.arr-icon:hover{
+    transform: scale(1.2);
+}
+
+.slider-div{
+    background-color: #fff !important;
+    width: 10%;
+    height: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
 }
 
 .barandname{
@@ -133,8 +157,12 @@
         font-size: 30px;
         width: 310px;
     }
+    .cards{
+        gap: 5px;
+    }
     .card{
         width: 290px;
+        transform: scale(.9);
     }
     .cimg{
         height: 180px;

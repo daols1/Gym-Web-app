@@ -65,7 +65,7 @@
     flex-direction: column;
 }
 
-.hsection1txt{
+.hsection1txt:focus-within{
     animation: fade-right-in 3s;
 }
 

@@ -1,3 +1,12 @@
+## Leaving the default text here for refrence
+
+# This gym website was designed and developed by 
+## David Ladipo 
+
+This project was done to understand some of the concepts of react which are React-Router, Testing with Jest, Cool CSS animations.
+
+The project idea and original design was gotten from a random search for themes on theme forest.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

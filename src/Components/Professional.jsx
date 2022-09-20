@@ -1,4 +1,4 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import './Professional.css';
 import {BsFacebook, BsTwitter} from 'react-icons/bs';
 import {FaInstagram} from 'react-icons/fa';
@@ -7,6 +7,11 @@ import teach2 from '../assets/home/trainer2.jpg'
 import teach3 from '../assets/home/trainer3.jpg'
 
 function Professional() {
+
+  // const [scroller, setScroller] = useState('translateX(0)')
+
+
+
 
    return (
     <div className='container professional'>
