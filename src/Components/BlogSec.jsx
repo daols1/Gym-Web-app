@@ -30,8 +30,7 @@ function BlogSec({number}) {
             )}
         </div>
     </div>
-    :
-    <Loader />
+    :null
   )
 }
 
