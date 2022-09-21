@@ -17,7 +17,7 @@ function BlogSec({number}) {
   return (
     Object.keys(blog).length !== 0 ?
     <div className='container blog-sec'>
-        <div onLoad={<Loader/>}>
+        <div >
             {blog.articles.slice(0, number).map((items) => 
             <div className='blog-rrs-card'>
                 <div className='rrs-img'><img src={items.urlToImage} alt="" className='rrs-img-itself' /></div>
@@ -30,7 +30,8 @@ function BlogSec({number}) {
             )}
         </div>
     </div>
-    :null
+    :
+    <Loader />
   )
 }
 
