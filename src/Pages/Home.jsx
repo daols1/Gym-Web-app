@@ -9,11 +9,13 @@ import Professional from '../Components/Professional';
 import Pricing from '../Components/Pricing';
 import FormSec from '../Components/FormSec';
 import Testimonial from '../Components/Testimonial';
+// import Loader from '../Components/Loader';
 
 
 function Home() {
+
   return (
-    <>
+    < >
       <Header />
       <HSection1 />
       <Video />

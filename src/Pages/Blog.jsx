@@ -1,8 +1,14 @@
 import React from 'react'
+import BlogHero from '../Components/BlogHero'
+import BlogSec from '../Components/BlogSec'
+
 
 function Blog() {
   return (
-    <h1>Blog</h1>
+    <>
+    <BlogHero />
+    <BlogSec number={10} />
+    </>
   )
 }
 
