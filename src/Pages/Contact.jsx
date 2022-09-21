@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactHero from '../Components/ContactHero'
-import {BiMailSend} from 'react-icons/bi'
+// import {BiMailSend} from 'react-icons/bi'
 import './Contact.css'
 
 
