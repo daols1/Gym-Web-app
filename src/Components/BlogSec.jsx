@@ -12,6 +12,7 @@ function BlogSec({number}) {
         fetch('https://newsapi.org/v2/everything?q=tesla&from=2022-08-21&sortBy=publishedAt&apiKey=cd92e9f887724483a702ade7186e4f76')
             .then((response) => response.json())
             .then((res) => setBlog(res))
+            .then((resc) => console.log(resc))
     }, [])
 
   return (
