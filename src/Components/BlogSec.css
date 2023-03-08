@@ -1,64 +1,71 @@
-.blog-sec{
-    padding-top: 10%;
-    padding-bottom: 10%;
+.blog-sec {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.blog-sec > div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+/* .blog-sec > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+} */
+
+.blog-rrs-card {
+  background-color: rgb(194, 194, 194);
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.blog-rrs-card{
-    background-color: rgb(194, 194, 194);
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    border-radius: 10px;
+.rrs-blog-title {
+  font-size: 20px;
 }
 
-.rrs-img-itself{
-    max-height: 250px;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.rrs-img-itself {
+  max-height: 250px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.rrs-blog-title{
-    font-size: 18px;
+.rrs-blog-description {
+  font-size: 14px;
+  margin: 10px 0px 30px;
 }
 
-.rrs-text{
-    padding:20px;
+.readmore-blog {
+  align-self: flex-start;
+  text-decoration: none;
+  display: inline-block !important;
+  font-size: 13px;
+  padding: 10px 15px !important;
 }
 
-.rrs-blog-description{
+@media screen and (max-width: 930px) {
+  .rrs-text {
+    padding: 20px;
+  }
+  .blog-sec {
+    grid-template-columns: 1fr;
+  }
+  .blog-sec > div {
+    grid-template-columns: 1fr;
+  }
+  .readmore-blog {
+    display: block !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rrs-blog-title {
+    font-size: 16px;
+  }
+  .rrs-blog-description {
     font-size: 14px;
-    margin: 10px 0px 30px;
+  }
 }
-
-.readmore-blog{
-    align-self: flex-start;
-    text-decoration: none;
-    display: inline-block !important;
-}
-
-@media screen and (max-width:930px){
-    .blog-sec > div{
-        grid-template-columns: 1fr;
-    }
-    .readmore-blog{
-        display: block !important;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:600px){
-    .rrs-blog-title{
-        font-size: 16px;
-    }
-    .rrs-blog-description{
-        font-size: 14px;
-    }
-}
-
